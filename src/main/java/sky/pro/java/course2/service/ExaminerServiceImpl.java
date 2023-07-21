@@ -8,14 +8,16 @@ import sky.pro.java.course2.interfaces.QuestionService;
 import sky.pro.java.course2.repository.Question;
 
 import java.util.Collection;
-import java.util.stream.Collectors;
+import java.util.Random;
 
 @Service
 public class ExaminerServiceImpl implements ExaminerService {
     private final QuestionService questionService;
+    private final Random random;
 @Autowired
-    public ExaminerServiceImpl(QuestionService questionService) {
+    public ExaminerServiceImpl(QuestionService questionService, Random random) {
         this.questionService = questionService;
+        this.random = random;
     }
 
     @Override

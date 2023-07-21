@@ -13,11 +13,7 @@ import java.util.*;
 public class JavaQuestionService implements QuestionService {
 
     public Set<Question> questSet = new HashSet<>();
-//    private final Random random;
 
-//    public JavaQuestionService( Random random) {
-//        this.random = random;
-//    }
 
     @Override
     public Question add(String question, String answer) {
@@ -64,7 +60,7 @@ public class JavaQuestionService implements QuestionService {
 
     @Override
     public Question getRandomQuestion() {
-        return (Question) Collections.singleton(questSet);
+        return null;
 
         }
     }
