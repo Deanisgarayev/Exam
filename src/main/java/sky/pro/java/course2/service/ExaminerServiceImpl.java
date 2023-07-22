@@ -3,6 +3,7 @@ package sky.pro.java.course2.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import sky.pro.java.course2.Exceptions.OutOfQuestionsException;
 import sky.pro.java.course2.interfaces.ExaminerService;
 import sky.pro.java.course2.interfaces.QuestionService;
 import sky.pro.java.course2.repository.Question;
@@ -14,7 +15,8 @@ import java.util.Random;
 public class ExaminerServiceImpl implements ExaminerService {
     private final QuestionService questionService;
     private final Random random;
-@Autowired
+
+    @Autowired
     public ExaminerServiceImpl(QuestionService questionService, Random random) {
         this.questionService = questionService;
         this.random = random;
@@ -22,13 +24,13 @@ public class ExaminerServiceImpl implements ExaminerService {
 
     @Override
     public Collection<Question> getQuestions(int amount) {
-    return null;
-//        questionService.getAll().stream().collect(Collectors.toMap(e -> amount, e -> e.toString()));
-//        amount = 5;
-//        for (int i = 0; i < amount; i++) {
-//
-//        }
-
+        int total = questionService.getRandomQuestion();
+        if (amount <= total) {
+            for (int i = 0; i < amount; i++) {
+                questionService.getRandomQuestion();
+            }
+        }
+            throw new OutOfQuestionsException("you require us more questions than we have");
 
 //        Его задача: создать коллекцию и заполнить её с помощью вызова getRandomQuestion у QuestionService случайными вопросами.
 //
@@ -38,5 +40,6 @@ public class ExaminerServiceImpl implements ExaminerService {
 //        метода getRandomQuestion сервиса вопросов.
 //        2. Если запрошено большее количество вопросов, чем хранится в сервисе, нужно выкинуть исключение. Для этого,
 //        соответственно, нужно написать свое исключение со статусом BAD_REQUEST.
+        }
     }
-}
+

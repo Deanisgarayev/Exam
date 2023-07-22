@@ -4,6 +4,7 @@ package sky.pro.java.course2.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import sky.pro.java.course2.interfaces.ExaminerService;
 import sky.pro.java.course2.repository.Question;
@@ -19,7 +20,7 @@ public class ExamController {
         this.examinerService = examinerService;
     }
     @GetMapping("/getQuestions")
-    public Collection<Question> getQuestions(int amount) {
+    public Collection<Question> getQuestions(@RequestParam int amount) {
         return examinerService.getQuestions(amount);
     }
 }
