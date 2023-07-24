@@ -59,11 +59,9 @@ public class JavaQuestionService implements QuestionService {
     }
 
     @Override
-    public int getRandomQuestion() {
-//        Random random = new Random();
-//        return random.nextInt(questSet.size());
+    public Collection<Question> getRandomQuestion() {
         Random random = new Random();
-        return random.nextInt(questSet.size());
-
+         random.nextInt(0, 100);
+        return getAll();
         }
     }

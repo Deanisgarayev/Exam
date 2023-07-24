@@ -1,27 +1,30 @@
 package sky.pro.java.course2;
 
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import sky.pro.java.course2.Exceptions.OutOfQuestionsException;
 import sky.pro.java.course2.repository.Question;
+import sky.pro.java.course2.service.ExaminerServiceImpl;
 import sky.pro.java.course2.service.JavaQuestionService;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ExaminerServiceImplTest {
     @Mock
     JavaQuestionService javaQuestionService;
     @InjectMocks
-    ExaminerServiceImplTest out;
+    ExaminerServiceImpl out;
 
     @BeforeEach
     public void setUp() {
-        Mockito.when(javaQuestionService.getAll()).thenReturn(questSet());
+        Mockito.when(javaQuestionService.getRandomQuestion()).thenReturn(questSet());
     }
 
     private Set<Question> questSet() {
@@ -33,5 +36,16 @@ public class ExaminerServiceImplTest {
                 new Question("sixth", "sixth"),
                 new Question("seventh", "seventh")
         ));
+    }
+
+    @Test
+    public void getQuestionsTest() {
+        assertNotNull(out.getQuestions(2));
+    }
+
+    @Test
+    public void ShouldThrowExceptionWhenRequireMoreAmountThanHave() {
+        assertThrows(OutOfQuestionsException.class,
+                () -> out.getQuestions(10));
     }
 }
