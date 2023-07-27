@@ -8,9 +8,7 @@ import sky.pro.java.course2.interfaces.ExaminerService;
 import sky.pro.java.course2.interfaces.QuestionService;
 import sky.pro.java.course2.repository.Question;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Random;
+import java.util.*;
 
 @Service
 public class ExaminerServiceImpl implements ExaminerService {
@@ -26,14 +24,21 @@ public class ExaminerServiceImpl implements ExaminerService {
     @Override
     public Collection<Question> getQuestions(int amount) {
         int total = questionService.getAll().size();
-        if (amount <= total) {
-            amount = total;
-            for (int i = 0; i < amount; i++) {
-                return Collections.unmodifiableCollection(questionService.getRandomQuestion());
-            }
-        }
+        if (amount > total) {
             throw new OutOfQuestionsException("you require from us more questions than we have");
+        }
+        Set<Question> questionSet = new HashSet<>();
+        int i = 0;
+        while (i == amount) {
+            i++;
+            questionSet.add(questionService.getRandomQuestion());
 
         }
+        return Collections.unmodifiableCollection(questionSet);
     }
+
+
+
+}
+
 
