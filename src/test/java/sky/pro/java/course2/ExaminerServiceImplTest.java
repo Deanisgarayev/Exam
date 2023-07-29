@@ -1,7 +1,6 @@
 package sky.pro.java.course2;
 
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -28,17 +27,18 @@ public class ExaminerServiceImplTest {
     }
 
     private Set<Question> questSet() {
-        return new HashSet<>(Set.of( new Question("first", "first"),
+        return Set.of( new Question("first", "first"),
                 new Question("second","second"),
                 new Question("third", "third"),
                 new Question("forth", "forth"),
                 new Question("fifth", "fifth"),
                 new Question("sixth", "sixth"),
                 new Question("seventh", "seventh")
-        ));
+        );
     }
 
     @Test
+//    Set<Question>questionSet=new HashSet<>()
     public void getQuestionsTest() {
         assertNotNull(out.getQuestions(2));
     }

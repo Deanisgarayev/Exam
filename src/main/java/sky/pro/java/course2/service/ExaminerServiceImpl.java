@@ -28,11 +28,8 @@ public class ExaminerServiceImpl implements ExaminerService {
             throw new OutOfQuestionsException("you require from us more questions than we have");
         }
         Set<Question> questionSet = new HashSet<>();
-        int i = 0;
-        while (i == amount) {
-            i++;
+        while (questionSet.size() != amount) {
             questionSet.add(questionService.getRandomQuestion());
-
         }
         return Collections.unmodifiableCollection(questionSet);
     }

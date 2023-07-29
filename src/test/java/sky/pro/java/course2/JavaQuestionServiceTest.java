@@ -1,22 +1,15 @@
 package sky.pro.java.course2;
 
 
-import org.junit.jupiter.api.Assertions;
+
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import sky.pro.java.course2.Exceptions.ItAlreadyExistsException;
 import sky.pro.java.course2.Exceptions.ItIsAbsentException;
-import sky.pro.java.course2.configuration.JavaConfiguration;
 import sky.pro.java.course2.interfaces.QuestionService;
 import sky.pro.java.course2.repository.Question;
 import sky.pro.java.course2.service.JavaQuestionService;
-
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class JavaQuestionServiceTest {
@@ -57,6 +50,6 @@ public class JavaQuestionServiceTest {
                 out.add("third", "third")
         ));
         Set<Question> getAll = new HashSet<>(out.getAll());
-        Assertions.assertIterableEquals(result, getAll);
+        assertIterableEquals(result, getAll);
     }
 }
