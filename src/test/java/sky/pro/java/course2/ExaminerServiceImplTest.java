@@ -3,49 +3,53 @@ package sky.pro.java.course2;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+
 import org.mockito.Mockito;
 import sky.pro.java.course2.Exceptions.OutOfQuestionsException;
+import sky.pro.java.course2.interfaces.ExaminerService;
+import sky.pro.java.course2.interfaces.QuestionService;
 import sky.pro.java.course2.repository.Question;
 import sky.pro.java.course2.service.ExaminerServiceImpl;
-import sky.pro.java.course2.service.JavaQuestionService;
+
 
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 public class ExaminerServiceImplTest {
-    @Mock
-    JavaQuestionService javaQuestionService;
-    @InjectMocks
-    ExaminerServiceImpl out;
+    private ExaminerService out;
+    private QuestionService questionService;
 
     @BeforeEach
     public void setUp() {
-        Mockito.when(javaQuestionService.getRandomQuestion()).thenReturn(questSet());
-    }
-
-    private Set<Question> questSet() {
-        return Set.of( new Question("first", "first"),
-                new Question("second","second"),
-                new Question("third", "third"),
-                new Question("forth", "forth"),
-                new Question("fifth", "fifth"),
-                new Question("sixth", "sixth"),
-                new Question("seventh", "seventh")
-        );
+        questionService = Mockito.mock(QuestionService.class);
+        out = new ExaminerServiceImpl(questionService);
     }
 
     @Test
-//    Set<Question>questionSet=new HashSet<>()
     public void getQuestionsTest() {
-        assertNotNull(out.getQuestions(2));
+        Question question1 = new Question("first", "first");
+        Question question2 = new Question("second","second");
+        Question question3 = new Question("third", "third");
+        when(questionService.getAll()).thenReturn(List.of(question1, question2, question3));
+        when(questionService.getRandomQuestion())
+                .thenReturn(question2)
+                .thenReturn(question1)
+                .thenReturn(question3)
+                .thenReturn(question1);
+        Collection<Question> questions = out.getQuestions(3);
+        assertEquals(3,questions.size());
+        verify(questionService, times(3)).getRandomQuestion();
     }
 
     @Test
     public void ShouldThrowExceptionWhenRequireMoreAmountThanHave() {
+        Question question1 = new Question("first", "first");
+        Question question2 = new Question("second","second");
+        Question question3 = new Question("third", "third");
+        when(questionService.getAll()).thenReturn(List.of(question1, question2, question3));
         assertThrows(OutOfQuestionsException.class,
-                () -> out.getQuestions(10));
+                () -> out.getQuestions(4));
     }
 }

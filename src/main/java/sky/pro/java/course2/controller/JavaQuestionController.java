@@ -23,6 +23,10 @@ public class JavaQuestionController {
     Question add(@RequestParam String question, @RequestParam String answer) {
         return service.add(question, answer);
     }
+//    @GetMapping(value = "/add" )
+//    Question add(@RequestParam String question, @RequestParam String answer) {
+//        return service.add(new Question(question, answer));
+//    }
     @GetMapping("/getAll")
     Collection<Question> getAll() {
         return service.getAll();
@@ -31,5 +35,9 @@ public class JavaQuestionController {
     Question remove(@RequestParam String question, @RequestParam String answer) {
         return service.remove(question, answer);
     }
+//    @GetMapping("/remove")
+//    Question remove(@RequestParam String question, @RequestParam String answer) {
+//        return service.remove(new Question(question, answer));
+//    }
 
 }

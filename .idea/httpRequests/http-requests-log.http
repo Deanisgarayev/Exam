@@ -1,0 +1,450 @@
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173604.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173603.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173601.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173600.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=3
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173556.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=3
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173554.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=5
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173550.400.json
+
+###
+
+GET http://localhost:8080/exam/java/getAll
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173542.200.json
+
+###
+
+GET http://localhost:8080/exam/java/add?question=what the&answer=wow
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173538.200.json
+
+###
+
+GET http://localhost:8080/exam/java/add?question=how is it goin'&answer=not bad
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173534.200.json
+
+###
+
+GET http://localhost:8080/exam/java/add?question=what have you been up to&answer=not much
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T173532.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=5
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085612.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=5
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085611.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085557.200.json
+
+###
+
+GET http://localhost:8080/exam/java/add?question=what the&answer=wow
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085552.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085516.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085515.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085454-1.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085454.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085452.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085451.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085449.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085448.200.json
+
+###
+
+GET http://localhost:8080/exam/java/add?question=what have you been up to&answer=not much
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085442.200.json
+
+###
+
+GET http://localhost:8080/exam/java/add?question=how is it goin'&answer=cool
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085348.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085307.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085306.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085305-1.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085305.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085304.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085303.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085301-1.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085301.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=3
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085235.400.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=3
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085234.400.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085226-1.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085226.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085219.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085218.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085217-1.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085217.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085215-1.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085215.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085158.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085154.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085150.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085149.200.json
+
+###
+
+GET http://localhost:8080/Exam/getQuestions?amount=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085147.200.json
+
+###
+
+GET http://localhost:8080/exam/java/add?question=how is it goin'&answer=not bad
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085140.200.json
+
+###
+
+GET http://localhost:8080/exam/java/add?question=what&answer=wow
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-29T085138.200.json
+
+###
+

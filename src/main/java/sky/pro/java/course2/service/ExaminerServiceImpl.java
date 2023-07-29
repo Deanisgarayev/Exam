@@ -13,12 +13,10 @@ import java.util.*;
 @Service
 public class ExaminerServiceImpl implements ExaminerService {
     private final QuestionService questionService;
-    private final Random random;
 
     @Autowired
-    public ExaminerServiceImpl(QuestionService questionService, Random random) {
+    public ExaminerServiceImpl(QuestionService questionService) {
         this.questionService = questionService;
-        this.random = random;
     }
 
     @Override
@@ -28,10 +26,10 @@ public class ExaminerServiceImpl implements ExaminerService {
             throw new OutOfQuestionsException("you require from us more questions than we have");
         }
         Set<Question> questionSet = new HashSet<>();
-        while (questionSet.size() != amount) {
+        while (questionSet.size() < amount) {
             questionSet.add(questionService.getRandomQuestion());
         }
-        return Collections.unmodifiableCollection(questionSet);
+        return questionSet;
     }
 
 
