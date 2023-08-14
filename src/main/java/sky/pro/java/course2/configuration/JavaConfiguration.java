@@ -12,6 +12,7 @@ import java.util.Random;
 
 @Configuration
 public class JavaConfiguration {
+
     @Bean
     @Primary
     public Random random() {
