@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import sky.pro.java.course2.Exceptions.OutOfQuestionsException;
 import sky.pro.java.course2.interfaces.ExaminerService;
 import sky.pro.java.course2.interfaces.QuestionService;
-import sky.pro.java.course2.repository.Question;
+import sky.pro.java.course2.model.Question;
 
 import java.util.*;
 
@@ -19,6 +19,7 @@ public class ExaminerServiceImpl implements ExaminerService {
         this.questionService = questionService;
     }
 
+//    gets random question and answer
     @Override
     public Collection<Question> getQuestions(int amount) {
         int total = questionService.getAll().size();

@@ -1,4 +1,4 @@
-package sky.pro.java.course2.repository;
+package sky.pro.java.course2.model;
 
 import java.util.Objects;
 

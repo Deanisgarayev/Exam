@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import sky.pro.java.course2.Exceptions.ItAlreadyExistsException;
 import sky.pro.java.course2.Exceptions.ItIsAbsentException;
 import sky.pro.java.course2.interfaces.QuestionService;
-import sky.pro.java.course2.repository.Question;
+import sky.pro.java.course2.model.Question;
 import sky.pro.java.course2.service.JavaQuestionService;
 import java.util.HashSet;
 import java.util.Set;

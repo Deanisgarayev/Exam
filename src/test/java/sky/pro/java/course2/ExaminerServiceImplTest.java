@@ -8,7 +8,7 @@ import org.mockito.Mockito;
 import sky.pro.java.course2.Exceptions.OutOfQuestionsException;
 import sky.pro.java.course2.interfaces.ExaminerService;
 import sky.pro.java.course2.interfaces.QuestionService;
-import sky.pro.java.course2.repository.Question;
+import sky.pro.java.course2.model.Question;
 import sky.pro.java.course2.service.ExaminerServiceImpl;
 
 
