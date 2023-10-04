@@ -8,7 +8,9 @@ import sky.pro.java.course2.interfaces.ExaminerService;
 import sky.pro.java.course2.interfaces.QuestionService;
 import sky.pro.java.course2.model.Question;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 @Service
 public class ExaminerServiceImpl implements ExaminerService {
@@ -19,7 +21,7 @@ public class ExaminerServiceImpl implements ExaminerService {
         this.questionService = questionService;
     }
 
-//    gets random question and answer
+    //    gets random question and answer
     @Override
     public Collection<Question> getQuestions(int amount) {
         int total = questionService.getAll().size();
@@ -32,7 +34,6 @@ public class ExaminerServiceImpl implements ExaminerService {
         }
         return questionSet;
     }
-
 
 
 }

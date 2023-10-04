@@ -12,24 +12,25 @@ import java.util.Collection;
 @RequestMapping("/exam/java")
 public class JavaQuestionController {
     QuestionService service;
-@Autowired
+
+    @Autowired
     public JavaQuestionController(QuestionService service) {
         this.service = service;
     }
 
-//    add question and answer
-    @PostMapping(value = "/add" )
+    //    add question and answer
+    @PostMapping(value = "/add")
     Question add(@RequestParam String question, @RequestParam String answer) {
         return service.add(question, answer);
     }
 
-//    get all questions and answers
+    //    get all questions and answers
     @GetMapping("/getAll")
     Collection<Question> getAll() {
         return service.getAll();
     }
 
-//    delete random question and answer
+    //    delete random question and answer
     @DeleteMapping("/remove")
     Question remove(@RequestParam String question, @RequestParam String answer) {
         return service.remove(question, answer);

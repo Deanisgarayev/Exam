@@ -15,12 +15,13 @@ import java.util.Collection;
 @RequestMapping("/Exam")
 public class ExamController {
     private final ExaminerService examinerService;
-@Autowired
+
+    @Autowired
     public ExamController(ExaminerService examinerService) {
         this.examinerService = examinerService;
     }
 
-//    get random question and answer
+    //    get random question and answer
     @GetMapping("/getQuestions")
     public Collection<Question> getQuestions(@RequestParam int amount) {
         return examinerService.getQuestions(amount);

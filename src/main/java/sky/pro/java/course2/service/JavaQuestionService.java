@@ -15,7 +15,7 @@ public class JavaQuestionService implements QuestionService {
 
     public Set<Question> questSet = new HashSet<>();
 
-//    adds question and answer
+    //    adds question and answer
     @Override
     public Question add(String question, String answer) {
         Question quest = new Question(question, answer);
@@ -26,7 +26,7 @@ public class JavaQuestionService implements QuestionService {
         return quest;
     }
 
-//    remove question and answer
+    //    remove question and answer
     @Override
     public Question remove(String question, String answer) {
         Question quest = new Question(question, answer);
@@ -37,7 +37,7 @@ public class JavaQuestionService implements QuestionService {
         throw new ItIsAbsentException("You can't remove that isn't there");
     }
 
-//    gets all questions and answers
+    //    gets all questions and answers
     @Override
     public Collection<Question> getAll() {
         return Collections.unmodifiableCollection(questSet);
@@ -50,5 +50,5 @@ public class JavaQuestionService implements QuestionService {
         Random random = new Random();
         List<Question> questions = new ArrayList<>(getAll());
         return questions.get(random.nextInt(questions.size()));
-        }
     }
+}
